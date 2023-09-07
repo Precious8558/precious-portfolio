@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/vue@latest"></script>
+</head>
+
+<body>
+
+    <div class="head" id="home">
+
+        <div class="head-2">
+            <button id="dark-mode-toggle" class="dark-M" onclick="toggleDark()">🌙</button>
+            <div class="topnav" id="topNav">
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skill">Skills</a>
+                    <a href="#project">Project</a>
+                    <a href="#contact">Contact</a>
+
+                </nav>
+            </div>
+            <div class="responsive-nav" id="respon">
+                <button @click="toggle">{{click ? '≣' : '≣'}}</button>
+                <nav v-if="click">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skill">Skills</a>
+                    <a href="#project">Project</a>
+                    <a href="#contact">Contact</a>
+                    <a class="dark-M" onclick="toggleDark()">dark mode</a>
+                </nav>
+
+            </div>
+            <p class="name">Hi!
+                <br>
+                I'm Precious
+            </p>
+            <p class="scroll">scroll down </p>
+            <p class="scroll-arrow">⇣</p>
+        </div>
+    </div>
+    <!-- about -->
+    <div class="about" id="about">
+        <div class="img-container">
+            <img src="image/mypic2.jpg">
+        </div>
+        <div class="intro">
+
+            <p><strong style="color: rgb(15, 38, 113);">Hi,I'm precious </strong> <br> Frontend Developer,with
+                knowledge
+                in
+                web development and design,I offer the best project resulting in quality wrok.</p>
+
+            <a href="https://wa.link/roqy8f"> <button>let talk</button></a>
+        </div>
+    </div>
+    <!-- skill -->
+    <div class="skill" id="skill">
+        <p>My Skills</p>
+        <div class="skill-container">
+
+            <div class="logo">
+                <img src="image/css1.png" alt="">
+                <img src="image/html.png" alt="">
+                <img src="image/js.png" alt="">
+                <img src="image/vue.png" alt="">
+            </div>
+            <div class="range-container">
+                <strong>HTML</strong>
+                <div class="range" style="width: 50%;background-color: rgb(237, 128, 5);">75%</div>
+                <br>
+                <strong>CSS</strong>
+                <div class="range" style="width: 30%;background-color: rgb(0, 23, 128);">45%</div>
+                <br>
+                <strong>VUE.JS</strong>
+                <div class="range" style="width: 30%;background-color: green;">45%</div>
+                <br>
+                <strong>JAVASCRIPT</strong>
+                <div class="range" style="width: 20%;background-color: rgb(193, 193, 19);">30%</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- project -->
+    <div class="project-container" id="project">
+        <p>PROJECTS</p>
+        <div class="project">
+            <img src="image/coffee.jpg" alt="">
+            <img src="image/game.jpg" alt="">
+            <img src="image/banking2.jpg" alt="">
+            <img src="image/light.jpg" alt="">
+            <img src="image/island.jpg" alt="">
+            <img src="image/car.jpg" alt="">
+        </div>
+    </div>
+    <!-- contact -->
+    <div class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <span>
+
+                <ul> <strong style="font-size: 30px;">Links</strong>
+                    <br>
+                    <br>
+                    <li><a href="#home">Home</a> </li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a> </li>
+                </ul>
+            </span>
+            <span>
+
+                <ul> <strong style="font-size: 30px;">Services</strong>
+                    <br>
+                    <br>
+                    <li> Web Design</li>
+                    <li> Web Development</li>
+                </ul>
+            </span>
+            <span>
+                <strong style="font-size: 30px;">Have a Question?</strong>
+                <br>
+
+                <p>📍 Oye Ekiti,Ekiti state,Nigeria</p>
+                <p>📞 +234 802 418 0072</p>
+                <p>💌 padewumi64@gmail.com</p>
+                <a href="https://instagram.com/_samuel__333?igshid=MmIzYWVlNDQ5Yg==" class="social"><span
+                        class="fab fa-instagram"></span></a>
+                <a href="https://twitter.com/Adewumi51493238" class="social"><span class="fab fa-twitter"></span></a>
+                <a href="" class="social"><span class="fab fa-facebook"></span></a>
+            </span>
+        </div>
+        <p style="text-align: center;">Report an issue | Blog | Privacy | Terms | 🌐 | © 2023 <br>Designed By Anonymous
+        </p>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</htm>

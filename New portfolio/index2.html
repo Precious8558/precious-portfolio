@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    button{
+        background-color: black;
+        color: white;
+        height: 40px;
+        width: 90px;
+        font-size: 20px;
+        border: none;
+        border-radius: 20px;
+    }
+    .is-open {
+        color: green;
+    }
+</style>
+
+<body>
+
+    <button onclick="
+        openB()
+        " class="js-button">open</button>
+
+
+
+    <script>
+        function openB() {
+            const button = document.querySelector('.js-button');
+
+            if (button.innerHTML === 'open') {
+               console.log( button.innerHTML = 'close');
+               button.classList.add('is-open')
+            } else { button.innerHTML = 'open' 
+        button.classList.remove('is-open')}
+        }
+    </script>
+</body>
+
+</html>
